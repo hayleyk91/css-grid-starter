@@ -585,7 +585,7 @@ p code{
 	/* make this a grid container with 3 equal columns and 4 equal rows, with a 16px gap */
 	display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(4, lfr);
+    grid-template-rows: repeat(4, 1fr);
     gap: 16px;
 	box-shadow: none;
 }
@@ -689,7 +689,7 @@ footer{
         /* Make this into a grid container with three columns. The first should be 0.25fr wide, the second should be 1.75fr wide, and the last should be 2fr wide.
         Include a 1rem gap and align the items to the center */
         display: grid;
-        grid-template-columns: 0.25fr, 1.75fr, 2fr;
+        grid-template-columns: 0.25fr 1.75fr 2fr;
         gap: 1rem;
         align-items: center;
     }
@@ -767,8 +767,8 @@ footer{
     }
 
     #practice{
-        /* TO DO: Adjust the number of columns in this grid container to 12 that are equal in size */
-        grid-template-columns: repeat(12, lfr);
+        /* Adjust the number of columns in this grid container to 12 that are equal in size */
+        grid-template-columns: repeat(12, 1fr);
     }
 
     #practice section{
